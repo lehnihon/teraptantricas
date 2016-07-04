@@ -1,0 +1,44 @@
+#footer{	
+	
+	div.footer-content{
+		padding:50px 0;
+		color:#FFFFFF;
+
+		ul{
+			padding:0;
+			margin: 0;
+			list-style-type: none;
+			a{
+				color:#FFFFFF;	
+			}
+			a:hover{
+				color:#fff40e;
+			}
+		}
+	}
+
+	div.copyrino{
+		text-align: center;
+		background-color:white;
+		padding:20px 0;
+		color: #868686;
+		.col-md-12{
+			padding:12px;
+			a{
+				color: #868686;
+			}
+			a:hover{
+				color: #b6b6b6;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 991px) {  
+
+}
+
+@media (min-width: 992px) {  
+  
+}
