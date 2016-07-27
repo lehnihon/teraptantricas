@@ -1,8 +1,9 @@
 #footer{	
-	
+	text-align:left;
+
 	div.footer-content{
 		padding:50px 0;
-		color:#FFFFFF;
+		background-color:#f0c402;
 
 		ul{
 			padding:0;
@@ -19,16 +20,16 @@
 
 	div.copyrino{
 		text-align: center;
-		background-color:white;
+		color: #606060;
+		background-color:#f6f8fb;
 		padding:20px 0;
-		color: #868686;
-		.col-md-12{
+		.col-md-10{
 			padding:12px;
 			a{
-				color: #868686;
+				color: #606060;
 			}
 			a:hover{
-				color: #b6b6b6;
+				color:#bfbfbf;
 			}
 		}
 	}

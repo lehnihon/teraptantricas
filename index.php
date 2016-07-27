@@ -3,98 +3,142 @@ get_header(); ?>
 
 <div id="content">
 	<section id="banner">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">		
 				<?php putRevSlider( "banner-index" ) ?>		
 			</div>
 		</div>
 	</section>
-	<section id="apresentacao">
+	<section id="sobre-home">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="small">Vintage Poker Club</h1>
-					<h4>Jogue Poker com os melhores no Vintage Poker Club.</h4>
+					<h1 class="small">Tapeçaria e reforma de estofados no Tatuapé</h1>
+					<h2>A Nobre Arte Design é uma tapeçaria de alta qualidade localizada no Tatuapé.</h2>
 				</div>
-			</div><br><br>
+			</div> <br>
 			<div class="row">
-				<div class="col-md-4 anima-a">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-1.jpg"; ?>"/></a>
-					<h3>Veja a galeria de fotos</h3>
-					<p>Somos uma agência de marketing digital especializada em micro e pequenas empresas brasileiras a se destacaremno mercado digital.</p>
-					<a href="<?php echo esc_url( home_url( '/' ) )."atelie-culinario"; ?>" class="btn-saiba-mais">Confira</a>
+				<div class="col-md-6 text-left">
+					<p>
+						A Nobre Arte é uma tapeçaria que está localizada no bairro do Tatuapé, e é uma 
+						empresa especializada em serviços de tapeçaria e reforma de estofados em geral.						
+					</p>
+					<p>
+						Nossa tapeçaria tem como visão de futuro ser referência em qualidade e 
+						atendimento no mercado de estofados, tapeçaria e artigos para decoração e 
+						design de interiores. 						
+					</p>
+					<p>
+						A tapeçaria Nobre Arte Design realiza uma prévia verificação do serviço de 
+						tapeçaria e reforma de estofado a ser realizado, pode ser pessoalmente ou via 
+						internet.						
+					</p>
 				</div>
-				<div class="col-md-4 anima-b">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-2.jpg"; ?>"/></a>
-					<h3>Fique de olho no ranking</h3>
-					<p>Somos uma agência de marketing digital especializada em micro e pequenas empresas brasileiras a se destacaremno mercado digital.</p>
-					<a href="<?php echo esc_url( home_url( '/' ) )."atelie-culinario"; ?>" class="btn-saiba-mais">Confira</a>
-				</div>
-				<div class="col-md-4 anima-c">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-3.jpg"; ?>"/></a>
-					<h3>Confira a nossa agenda</h3>
-					<p>Somos uma agência de marketing digital especializada em micro e pequenas empresas brasileiras a se destacaremno mercado digital.</p>
-					<a href="<?php echo esc_url( home_url( '/' ) )."atelie-culinario"; ?>" class="btn-saiba-mais">Confira</a>
+				<div class="col-md-6 text-left">
+					<p>
+						Realizamos sem compromisso um orçamento detalhado dos serviços e produtos 
+						que serão utilizados na reforma do estofado e fornecemos todo o suporte de 
+						retirada e entrega na casa do cliente.						
+					</p>
+					<p>
+						A Nobre Arte Design conta com uma equipe especializada em desmontagem e 
+						montagem de estofados.						
+					</p>
+					<p>
+						Trabalhamos com os principais fornecedores do mercado de tapeçaria e 
+						executamos todas as reformas de estofados com produtos de procedência, 
+						qualidade e garantias.								
+					</p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="detalhes">
+
+	<section id="servicos">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7 text-left anima-h">
-					<h3 class="laranja">Vintage Poker Club</h3><br>
-					<p>Somos uma agência de marketing digital especializada em micro e pequenas empresas brasileiras a se destacarem no mercado digital. <br>	
-						Somos uma agência de marketing digital especializada em micro e pequenas empresas brasileiras a se destacarem no mercado digital.
-
-					</p>
-					<ul>
-						<li>Agência de marketing digital</li>
-						<li>Agência de marketing digital</li>
-						<li>Agência de marketing digital</li>
-						<li>Agência de marketing digital</li>
-					</ul><br>
-					<a href="<?php echo esc_url( home_url( '/' ) )."fotos"; ?>" class="btn-confira">Confira</a>
+				<div class="col-md-4">
+					<img class="e-claro" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner1.jpg"; ?>"/>
+					<h4>Impermeabilização</h4>
+					<p>Trabalhamos com impermeabilização de sofás, colchões, poltronas e estofados.</p>
+					<a href="<?php echo esc_url( home_url( '/' ) )."atelie-culinario"; ?>" class="btn-saiba-mais">CONFIRA</a>
 				</div>
-				<div class="col-md-5 text-left anima-i">
-					<div class="fotos-sobre row">
-						<div class="col-md-6">
-							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-1.jpg"; ?>"/>
-						</div>
-						<div class="col-md-6">
-							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-1.jpg"; ?>"/>
-						</div>
-					</div>
-					<div class="fotos-sobre row">	
-						<div class="col-md-6">
-							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-1.jpg"; ?>"/>
-						</div>
-						<div class="col-md-6">
-							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-1.jpg"; ?>"/>
-						</div>
-					</div>
-			
+				<div class="col-md-4">
+					<img class="e-claro" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner2.jpg"; ?>"/>
+					<h4>Reforma de Estofados</h4>
+					<p>Reforma de sofás, poltronas, cadeiras ede todos os estofados em geral.</p>
+					<a href="<?php echo esc_url( home_url( '/' ) )."atelie-culinario"; ?>" class="btn-saiba-mais">CONFIRA</a>
+				</div>
+				<div class="col-md-4">
+					<img class="e-claro" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner3.jpg"; ?>"/>
+					<h4>Tapeçaria</h4>
+					<p>A Nobre Arte Design realiza todos os serviços de tapeçaria e estofamento para móveis.</p>
+					<a href="<?php echo esc_url( home_url( '/' ) )."eventos"; ?>" class="btn-saiba-mais">CONFIRA</a>
 				</div>
 			</div>
 		</div>		
 	</section>
 
-	<section id="maps">
-		<div class="container maps-title">
+	<section id="fotos-sobre">
+		<div class="container">
 			<div class="row">
+				<div class="col-md-7 text-left">
+					<h2 class="amarelo">Tapeçaria e Reforma de Estofados no Tatuapé</h2>
+					<p class="">A Nobre Arte Desig é uma tapeçaria com vasta experiência em reforma de estofados em geral, com atendimento diferenciado e garantia em todos os serviços prestados. <br>
+					A Tapeçaria Nobre Arte Design é uma empresa especializada em reforma de todos os tipos de sofá, estofados em geral, puffs, cadeiras de sala de jantar, poltronas e também fabricamos cabeçeiras personalizadas de acordo com a sua necessidade. 
+					</p>
+					<ul>
+						<li>Reforma de estofados em geral</li>
+						<li>Tapeçaria localizada no Tatuapé</li>
+						<li>Atendimento diferenciado</li>
+						<li>Impermeabilização de estofados</li>
+					</ul>
+					<a href="<?php echo esc_url( home_url( '/' ) )."fotos"; ?>" class="btn-amarelo">CONFIRA</a>
+				</div>
+				<div class="col-md-5 text-left">
+					<h4>Fotos</h4>
+					
+					<div class="row">
+						<div class="col-md-6">
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner1.jpg"; ?>"/>
+						</div>
+						<div class="col-md-6">
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner1.jpg"; ?>"/>
+						</div>
+					</div>
+					<div class="fotos-sobre row">	
+						<div class="col-md-6">
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner1.jpg"; ?>"/>
+						</div>
+						<div class="col-md-6">
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner1.jpg"; ?>"/>
+						</div>
+					</div>
+			
+				</div>
+			</div>	
+		</div>	
+	</section>
+
+	<section id="maps">
+		<div class="container">
+			<div class="row text-left detalhes-maps">
 				<div class="col-md-12">
-					<h3 class="verde">Localização</h3>
+					<h2 class="amarelo">Localização da Tapeçaria</h2>
 					<p>
-						Estrada do Capuava, 4.421 - Sala 202 - Cotia - São Paulo <br>
-						<strong>Telefone: </strong>11 1234-5678 <strong>Email: </strong>contato@vintagepoker.com.br
+						Rua São Jorge, 86 - Tatuapé, São Paulo - SP
+					</p>
+					<p>
+						<strong>Telefone.: </strong>11 3938-0200 <strong>Email.: </strong>contato@nobreartedesign.com.br
 					</p>
 				</div>
-			</div>			
+			</div>
 		</div>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12 videoWrapper">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0202897866575!2d-46.89584758435346!3d-23.603605269040322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfaa060507c487%3A0x520f2d8917616578!2sEstr.+do+Capuava%2C+4421+-+Jardim+Ipes%2C+Cotia+-+SP!5e0!3m2!1spt-BR!2sbr!4v1460950196337" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>				</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0003376679856!2d-46.56683158444546!3d-23.532490266413117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ee54bb4a53b%3A0x5bfb87542ddadfac!2sR.+S%C3%A3o+Jorge%2C+86+-+Parque+S%C3%A3o+Jorge%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1463247862636" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>				
+				</div>
 			</div>			
 		</div>
 	</section>

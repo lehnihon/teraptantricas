@@ -8,25 +8,29 @@
 get_header(); ?>
 
 <div id="content">
-	<section id="agenda-detalhes">
-		<div class="container">
-			<div class="row">
-				<main class="col-md-12">
-
+	<div class="container">
+		<div class="row">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'single' ); ?>
+				<div class="col-md-6">
+					<a href="<?php the_permalink(); ?>">
+						<?php the_post_thumbnail('', array(
+							'class' => "img-responsive",
+						)); ?>
+					</a>
+				</div>
+				<div class="col-md-6 text-left">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
+					<?php the_content(); ?>
+				</div>
 
 			<?php endwhile; // End of the loop. ?>
-				</main><!-- #main -->
-			</div><!-- .row -->
-		</div><!-- .container -->
-
-	</section>
+		</div><!-- .row -->
+	</div><!-- .container -->
 
 	<?php get_template_part( 'template-parts/redes-bot'); ?>
-
+	
 </div><!-- #content -->
 
 <?php get_footer(); ?>

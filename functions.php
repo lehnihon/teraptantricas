@@ -160,31 +160,51 @@ add_filter('template_include', 'template_chooser');
 function change_post_menu_label() {
     global $menu;
     global $submenu;
-    $menu[5][0] = 'Agenda';
-    $submenu['edit.php'][5][0] = 'Agenda';
-    $submenu['edit.php'][10][0] = 'Adicionar Agenda';
+    $menu[5][0] = 'Tapeçaria';
+    $submenu['edit.php'][5][0] = 'Tapeçaria';
+    $submenu['edit.php'][10][0] = 'Adicionar Tapeçaria';
     echo '';
 }
 function change_post_object_label() {
         global $wp_post_types;
         $labels = &$wp_post_types['post']->labels;
-        $labels->name = 'Agenda';
-        $labels->singular_name = 'Agenda';
-        $labels->add_new = 'Adicionar Agenda';
-        $labels->add_new_item = 'Adicionar Agenda';
-        $labels->edit_item = 'Editar Agenda';
-        $labels->new_item = 'Agenda';
-        $labels->view_item = 'Ver Agenda';
-        $labels->search_items = 'Procurar Agenda';
-        $labels->not_found = 'Agenda não encontrado';
-        $labels->not_found_in_trash = 'Sem Agendas na lixeira';
+        $labels->name = 'Tapeçaria';
+        $labels->singular_name = 'Tapeçaria';
+        $labels->add_new = 'Adicionar Tapeçaria';
+        $labels->add_new_item = 'Adicionar Tapeçaria';
+        $labels->edit_item = 'Editar Tapeçaria';
+        $labels->new_item = 'Tapeçaria';
+        $labels->view_item = 'Ver Tapeçaria';
+        $labels->search_items = 'Procurar Tapeçaria';
+        $labels->not_found = 'Tapeçariao não encontrado';
+        $labels->not_found_in_trash = 'Sem Tapeçarias na lixeira';
 }
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
 
+function register_post_type_blog(){
+	$singular = 'Reforma de Estofado';
+	$plural = 'Reforma de Estofados';
+	$labels = array(
+		'name' => $plural,
+		'singular_name' => $singular,
+		'add_new_item' => 'Adicionar novo '.$singular,
+		);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+        'supports' => array('title', 'editor','thumbnail'),
+        'menu_position' => 5
+		);
+
+	register_post_type('blog',$args);
+}
+add_action(	'init','register_post_type_blog');
+flush_rewrite_rules();
+
 function register_post_type_fotos(){
-	$singular = 'Foto';
-	$plural = 'Fotos';
+	$singular = 'Impermeabil.';
+	$plural = 'Impermeabili.';
 	$labels = array(
 		'name' => $plural,
 		'singular_name' => $singular,
