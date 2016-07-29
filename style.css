@@ -1,5 +1,5 @@
 /*
-Theme Name: nobreartnovo
+Theme Name: teraptantricas
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -40,7 +40,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 26px;
     font-weight: bold;
-    color: #f0c402; }
+    color: #b70456; }
   #page h2 {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     margin: 0;
@@ -51,7 +51,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 26px;
     font-weight: bold;
-    color: #f0c402; }
+    color: #b70456; }
   #page h4 {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 20px;
@@ -91,7 +91,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    background-color: #404040;
+    background-color: #b70456;
     padding: 10px 45px;
     color: white;
     display: inline-block; }
@@ -174,21 +174,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         height: 22px; }
       #page #header div.header-logo div.redes .redes_sociais_header .youtube {
         background-image: url("images/redes-sociais.jpg");
-        background-position: 0px,center;
+        background-position: 0,center;
+        background-repeat: no-repeat;
+        width: 28px;
+        height: 28px;
+        display: inline-block; }
+      #page #header div.header-logo div.redes .redes_sociais_header .instagram {
+        background-image: url("images/redes-sociais.jpg");
+        background-position: -35px,center;
         background-repeat: no-repeat;
         width: 28px;
         height: 28px;
         display: inline-block; }
       #page #header div.header-logo div.redes .redes_sociais_header .twitter {
         background-image: url("images/redes-sociais.jpg");
-        background-position: -36px,center;
+        background-position: -70px,center;
         background-repeat: no-repeat;
         width: 28px;
         height: 28px;
         display: inline-block; }
       #page #header div.header-logo div.redes .redes_sociais_header .facebook {
         background-image: url("images/redes-sociais.jpg");
-        background-position: -72px,center;
+        background-position: -106px,center;
         background-repeat: no-repeat;
         width: 28px;
         height: 28px;

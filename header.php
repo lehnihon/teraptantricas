@@ -32,6 +32,7 @@
 					<div class="row redes">
 						<ul class="redes_sociais_header">
 							<li class="youtube"><a target="_blank" href="#"></a></li>
+							<li class="instagram"><a target="_blank" href="#"></a></li>
 							<li class="twitter"><a target="_blank" href="#"></a></li>
 							<li class="facebook"><a target="_blank" href="#"></a></li>
 						</ul>							

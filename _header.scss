@@ -39,7 +39,16 @@
 
 	        .redes_sociais_header .youtube{
 	            background-image: url("images/redes-sociais.jpg");
-	            background-position: 0px,center;
+	            background-position: 0,center;
+	            background-repeat:no-repeat;
+	            width:28px;
+	            height:28px;
+	            display:inline-block;       
+	        }
+
+	        .redes_sociais_header .instagram{
+	            background-image: url("images/redes-sociais.jpg");
+	            background-position: -35px,center;
 	            background-repeat:no-repeat;
 	            width:28px;
 	            height:28px;
@@ -48,7 +57,7 @@
 
 	        .redes_sociais_header .twitter{
 	            background-image: url("images/redes-sociais.jpg");
-	            background-position: -36px,center;
+	            background-position: -70px,center;
 	            background-repeat:no-repeat;
 	            width:28px;
 	            height:28px;
@@ -57,12 +66,12 @@
 
 	        .redes_sociais_header .facebook{
 	            background-image: url("images/redes-sociais.jpg");
-	            background-position: -72px,center;
+	            background-position: -106px,center;
 	            background-repeat:no-repeat;
 	            width:28px;
 	            height:28px;
 	            display:inline-block;       
-	        }    
+	        } 
 
 		}
 

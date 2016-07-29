@@ -160,66 +160,27 @@ add_filter('template_include', 'template_chooser');
 function change_post_menu_label() {
     global $menu;
     global $submenu;
-    $menu[5][0] = 'Tapeçaria';
-    $submenu['edit.php'][5][0] = 'Tapeçaria';
-    $submenu['edit.php'][10][0] = 'Adicionar Tapeçaria';
+    $menu[5][0] = 'Terapeuta';
+    $submenu['edit.php'][5][0] = 'Terapeuta';
+    $submenu['edit.php'][10][0] = 'Adicionar Terapeuta';
     echo '';
 }
 function change_post_object_label() {
         global $wp_post_types;
         $labels = &$wp_post_types['post']->labels;
-        $labels->name = 'Tapeçaria';
-        $labels->singular_name = 'Tapeçaria';
-        $labels->add_new = 'Adicionar Tapeçaria';
-        $labels->add_new_item = 'Adicionar Tapeçaria';
-        $labels->edit_item = 'Editar Tapeçaria';
-        $labels->new_item = 'Tapeçaria';
-        $labels->view_item = 'Ver Tapeçaria';
-        $labels->search_items = 'Procurar Tapeçaria';
-        $labels->not_found = 'Tapeçariao não encontrado';
-        $labels->not_found_in_trash = 'Sem Tapeçarias na lixeira';
+        $labels->name = 'Terapeuta';
+        $labels->singular_name = 'Terapeuta';
+        $labels->add_new = 'Adicionar Terapeuta';
+        $labels->add_new_item = 'Adicionar Terapeuta';
+        $labels->edit_item = 'Editar Terapeuta';
+        $labels->new_item = 'Terapeuta';
+        $labels->view_item = 'Ver Terapeuta';
+        $labels->search_items = 'Procurar Terapeuta';
+        $labels->not_found = 'Terapeuta não encontrado';
+        $labels->not_found_in_trash = 'Sem Terapeutas na lixeira';
 }
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
-
-function register_post_type_blog(){
-	$singular = 'Reforma de Estofado';
-	$plural = 'Reforma de Estofados';
-	$labels = array(
-		'name' => $plural,
-		'singular_name' => $singular,
-		'add_new_item' => 'Adicionar novo '.$singular,
-		);
-	$args = array(
-		'labels' => $labels,
-		'public' => true,
-        'supports' => array('title', 'editor','thumbnail'),
-        'menu_position' => 5
-		);
-
-	register_post_type('blog',$args);
-}
-add_action(	'init','register_post_type_blog');
-flush_rewrite_rules();
-
-function register_post_type_fotos(){
-	$singular = 'Impermeabil.';
-	$plural = 'Impermeabili.';
-	$labels = array(
-		'name' => $plural,
-		'singular_name' => $singular,
-		'add_new_item' => 'Adicionar nova '.$singular,
-		);
-	$args = array(
-		'labels' => $labels,
-		'public' => true,
-        'supports' => array('title', 'editor','thumbnail'),
-        'menu_position' => 5
-		);
-
-	register_post_type('fotos',$args);
-}
-add_action(	'init','register_post_type_fotos');
 
 
 /**

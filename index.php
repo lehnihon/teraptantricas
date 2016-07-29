@@ -9,73 +9,43 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
-	<section id="sobre-home">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="small">Tapeçaria e reforma de estofados no Tatuapé</h1>
-					<h2>A Nobre Arte Design é uma tapeçaria de alta qualidade localizada no Tatuapé.</h2>
-				</div>
-			</div> <br>
-			<div class="row">
-				<div class="col-md-6 text-left">
-					<p>
-						A Nobre Arte é uma tapeçaria que está localizada no bairro do Tatuapé, e é uma 
-						empresa especializada em serviços de tapeçaria e reforma de estofados em geral.						
-					</p>
-					<p>
-						Nossa tapeçaria tem como visão de futuro ser referência em qualidade e 
-						atendimento no mercado de estofados, tapeçaria e artigos para decoração e 
-						design de interiores. 						
-					</p>
-					<p>
-						A tapeçaria Nobre Arte Design realiza uma prévia verificação do serviço de 
-						tapeçaria e reforma de estofado a ser realizado, pode ser pessoalmente ou via 
-						internet.						
-					</p>
-				</div>
-				<div class="col-md-6 text-left">
-					<p>
-						Realizamos sem compromisso um orçamento detalhado dos serviços e produtos 
-						que serão utilizados na reforma do estofado e fornecemos todo o suporte de 
-						retirada e entrega na casa do cliente.						
-					</p>
-					<p>
-						A Nobre Arte Design conta com uma equipe especializada em desmontagem e 
-						montagem de estofados.						
-					</p>
-					<p>
-						Trabalhamos com os principais fornecedores do mercado de tapeçaria e 
-						executamos todas as reformas de estofados com produtos de procedência, 
-						qualidade e garantias.								
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section id="servicos">
 		<div class="container">
-			<div class="row">
+			<?php
+			$args = array( 'posts_per_page' => 6, 'offset'=> 0, 'orderby' => 'rand'  );
+
+			$myposts = get_posts( $args );
+			$i = 0;
+			foreach ( $myposts as $post ) : setup_postdata( $post );
+			?>
+				<?php
+				if($i % 3 == 0):
+				?>
+					<div class="row">
+				<?php endif ?>
 				<div class="col-md-4">
-					<img class="e-claro" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner1.jpg"; ?>"/>
-					<h4>Impermeabilização</h4>
-					<p>Trabalhamos com impermeabilização de sofás, colchões, poltronas e estofados.</p>
-					<a href="<?php echo esc_url( home_url( '/' ) )."atelie-culinario"; ?>" class="btn-saiba-mais">CONFIRA</a>
+					<?php if ( has_post_thumbnail()) : ?>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+							<?php the_post_thumbnail('home-thumb', array(
+								'class' => "e-claro img-responsive",
+							)); ?>
+						</a>
+					<?php endif; ?>
+					<h4><?php the_title(); ?></h4>
+					<p><?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?></p>
+					<a href="<?php the_permalink(); ?>" class="btn-saiba-mais">CONFIRA</a>
 				</div>
-				<div class="col-md-4">
-					<img class="e-claro" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner2.jpg"; ?>"/>
-					<h4>Reforma de Estofados</h4>
-					<p>Reforma de sofás, poltronas, cadeiras ede todos os estofados em geral.</p>
-					<a href="<?php echo esc_url( home_url( '/' ) )."atelie-culinario"; ?>" class="btn-saiba-mais">CONFIRA</a>
-				</div>
-				<div class="col-md-4">
-					<img class="e-claro" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner3.jpg"; ?>"/>
-					<h4>Tapeçaria</h4>
-					<p>A Nobre Arte Design realiza todos os serviços de tapeçaria e estofamento para móveis.</p>
-					<a href="<?php echo esc_url( home_url( '/' ) )."eventos"; ?>" class="btn-saiba-mais">CONFIRA</a>
-				</div>
-			</div>
+	            <?php 
+	            $i++;
+	            if($i % 3 == 0): 
+	            ?>
+					</div>
+				<?php endif ?>
+			<?php 
+			endforeach; 
+			wp_reset_postdata();
+			?>
 		</div>		
 	</section>
 
