@@ -13,7 +13,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						&copy; Copyright <?php echo date('Y') ?> -  Tapeçaria Nobre Arte Design | <a target="_blank" href="http://agenciarino.com.br/">Site desenvolvido pela Agência Rino.</a>
+						&copy; Copyright <?php echo date('Y') ?> -  Terapeutas Massagens Tântricas  | <a target="_blank" href="http://agenciarino.com.br/">Site desenvolvido pela Agência Rino.</a>
 					</div>
 				</div>	
 			</div>	

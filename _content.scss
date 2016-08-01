@@ -90,7 +90,7 @@ div#content{
 	}
 
 	section#maps{
-		background-color:#404040;
+		background-color:#b70456;
 		color: white;
 
 		.detalhes-maps{
@@ -200,7 +200,6 @@ div#content{
 
 	section#redes-bot{
 		padding:80px 0;	
-		background-color:white;
 	
 		.redes_sociais_bot{
 			margin-bottom: 5px;
@@ -218,10 +217,6 @@ div#content{
 		    filter: alpha(opacity=60); /* For IE8 and earlier */
 		}
 
-		.redes_sociais_bot li{
-			margin: 0 8px;
-		}
-
 		.redes_sociais_bot a{
 			display: inline-block;
 			width:67px;
@@ -232,26 +227,34 @@ div#content{
 			background-image: url("images/redes-bot.jpg");
 			background-position: left,center;
 			background-repeat:no-repeat;
-			width:67px;
+			width:70px;
 			height:67px;
 			display:inline-block;		
 		}
 
 		.redes_sociais_bot .instagram{
 			background-image: url("images/redes-bot.jpg");
-			background-position: -87px,center;
+			background-position: -86px,center;
 			background-repeat:no-repeat;
-			width:67px;
+			width:70px;
 			height:67px;
 			display:inline-block;		
 		}
 
+		.redes_sociais_bot .twitter{
+			background-image: url("images/redes-bot.jpg");
+			background-position: -172px,center;
+			background-repeat:no-repeat;
+			width:70px;
+			height:67px;
+			display:inline-block;		
+		}
 
 		.redes_sociais_bot .facebook{
 			background-image: url("images/redes-bot.jpg");
 			background-position: right,center;
 			background-repeat:no-repeat;
-			width:67px;
+			width:70px;
 			height:67px;
 			display:inline-block;		
 		}
