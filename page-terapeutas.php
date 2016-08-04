@@ -3,13 +3,12 @@ get_header(); ?>
 
 <div id="content">
 	<div class="container">
-		<h1 class="small">Reforma de Estofados</h1>
+		<h1 class="small">Terapeutas</h1>
 		<?php 
 		$paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
 
 		$args = array(
-			'post_type' => 'reforma-de-estofados',
-			'posts_per_page' => 8,
+			'posts_per_page' => 6,
 		    'orderby' => 'post_date',
 		    'order' => 'DESC',
 		    'paged' => $paged);
@@ -18,14 +17,14 @@ get_header(); ?>
 		if ( $query->have_posts() ): ?>
 			<div class="row">	
 			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-				<div class="col-md-3">
+				<div class="col-md-4">
 					<article>
 						<strong><?php the_title(); ?></strong><br><br>
 						<?php the_post_thumbnail('home-thumb', array('class' => "img-responsive e-cinza")); ?>
 						<a href="<?php the_permalink(); ?>">Saiba Mais</a>
 					</article>
 				</div>
-				<?php if($query->current_post == 3): ?>
+				<?php if($query->current_post == 2): ?>
 					</div><br><div class="row">
 				<?php endif; ?>		
 			<?php endwhile; ?>										

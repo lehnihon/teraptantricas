@@ -45,8 +45,8 @@
 							<ul class="dropdown-menu">
 								<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Início</a></li
 								><li><a href="<?php echo esc_url( home_url( '/' )."sobre" ); ?>">Quem Somos</a></li
-								><li><a href="<?php echo esc_url( home_url( '/' ) )."tapeçaria"; ?>">A Massagem Tântrica</a></li
-								><li><a href="<?php echo esc_url( home_url( '/' ) )."reforma-de-estofados"; ?>">Terapeutas</a></li
+								><li><a href="<?php echo esc_url( home_url( '/' ) )."massagem-tantrica"; ?>">A Massagem Tântrica</a></li
+								><li><a href="<?php echo esc_url( home_url( '/' ) )."terapeutas"; ?>">Terapeutas</a></li
 								><li><a href="<?php echo esc_url( home_url( '/' ) )."contato"; ?>">Contato</a></li>
 							</ul>								
 						</div>
@@ -54,8 +54,8 @@
 							<ul class="menu-principal clearfix">
 								<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Início</a></li
 								><li><a href="<?php echo esc_url( home_url( '/' )."sobre" ); ?>">Quem Somos</a></li
-								><li><a href="<?php echo esc_url( home_url( '/' ) )."tapeçaria"; ?>">A Massagem Tântrica</a></li
-								><li><a href="<?php echo esc_url( home_url( '/' ) )."reforma-de-estofados"; ?>">Terapeutas</a></li
+								><li><a href="<?php echo esc_url( home_url( '/' ) )."massagem-tantrica"; ?>">A Massagem Tântrica</a></li
+								><li><a href="<?php echo esc_url( home_url( '/' ) )."terapeutas"; ?>">Terapeutas</a></li
 								><li><a href="<?php echo esc_url( home_url( '/' ) )."contato"; ?>">Contato</a></li>
 							</ul>
 						</nav><!-- #site-navigation -->						
