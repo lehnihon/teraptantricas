@@ -18,11 +18,16 @@ get_header(); ?>
 			<div class="row">	
 			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 				<div class="col-md-4">
-					<article>
-						<strong><?php the_title(); ?></strong><br><br>
-						<?php the_post_thumbnail('home-thumb', array('class' => "img-responsive e-cinza")); ?>
-						<a href="<?php the_permalink(); ?>">Saiba Mais</a>
-					</article>
+					<?php if ( has_post_thumbnail()) : ?>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+							<?php the_post_thumbnail('home-thumb', array(
+								'class' => "e-claro img-responsive",
+							)); ?>
+						</a>
+					<?php endif; ?>
+					<h4><?php the_title(); ?></h4>
+					<p><?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?></p>
+					<a href="<?php the_permalink(); ?>" class="btn-saiba-mais">CONFIRA</a>
 				</div>
 				<?php if($query->current_post == 2): ?>
 					</div><br><div class="row">
