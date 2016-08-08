@@ -195,6 +195,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		background-color:#dad38b;
 	}
 
+
+	div.paginacao{
+		margin:50px 0;
+		.page-numbers{
+			padding:5px;
+			background-color:#ececec;
+		}
+		.current{
+			background-color:#b70456;
+			color:white;
+		}
+	}
+
 	@import 'header';
 	@import 'content';
 	@import 'footer';

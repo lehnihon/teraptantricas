@@ -144,6 +144,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     font-weight: bold; }
   #page .btn-enviar:hover {
     background-color: #dad38b; }
+  #page div.paginacao {
+    margin: 50px 0; }
+    #page div.paginacao .page-numbers {
+      padding: 5px;
+      background-color: #ececec; }
+    #page div.paginacao .current {
+      background-color: #b70456;
+      color: white; }
   #page #header div.header-logo {
     padding: 15px 0; }
     #page #header div.header-logo div.menu-responsivo {

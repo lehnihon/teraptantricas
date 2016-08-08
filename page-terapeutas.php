@@ -33,7 +33,7 @@ get_header(); ?>
 					</div><br><div class="row">
 				<?php endif; ?>		
 			<?php endwhile; ?>										
-			</div>
+			</div><br>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="paginacao">
